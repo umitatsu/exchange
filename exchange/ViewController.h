@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TableViewCell.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
+@property(nonatomic,retain)NSMutableArray *exchanges;
+@property(nonatomic,retain)NSMutableArray *cellLabelName;
+@property(nonatomic,retain)NSMutableArray *cellImage;
+@property(nonatomic,retain)UITableView *table;
 
 @end
 
